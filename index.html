@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albumok Nyilvántartása</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Albumok Nyilvántartása</h1>
+  <table id="albumsTable">
+    <thead>
+      <tr>
+        <th>Zenekar</th>
+        <th>Album címe</th>
+        <th>Kiadási év</th>
+        <th>Műfaj</th>
+        <th>Akciók</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+
+  <h2>Új Album Hozzáadása</h2>
+  <form id="addAlbumForm">
+    <label for="band_name">Zenekar:</label>
+    <input type="text" id="band_name" name="band_name" required>
+    
+    <label for="album_title">Album címe:</label>
+    <input type="text" id="album_title" name="album_title" required>
+    
+    <label for="release_year">Kiadási év:</label>
+    <input type="number" id="release_year" name="release_year" required>
+    
+    <label for="genre">Műfaj:</label>
+    <input type="text" id="genre" name="genre" required>
+    
+    <button type="submit">Hozzáadás</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
